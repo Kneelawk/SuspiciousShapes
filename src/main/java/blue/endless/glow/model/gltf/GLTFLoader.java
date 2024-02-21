@@ -20,7 +20,7 @@ import blue.endless.glow.model.Vector3d;
 import blue.endless.glow.model.gltf.impl.GLTFData;
 
 public class GLTFLoader {
-	private static final Gson GSON = new GsonBuilder()
+	public static final Gson GSON = new GsonBuilder()
 		//.registerTypeAdapter(ModelTransformation.class, foo)
 		.create();
 

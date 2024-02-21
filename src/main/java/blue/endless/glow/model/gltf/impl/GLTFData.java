@@ -20,6 +20,7 @@ import blue.endless.glow.model.Vector2d;
 import blue.endless.glow.model.Vector3d;
 
 // Refer to https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html
+// Refer to https://github.com/KhronosGroup/glTF/tree/main
 public class GLTFData {
 	//PrimitiveType
 	public static final int GL_POINTS         = 0;
@@ -311,6 +312,8 @@ public class GLTFData {
 	public static class GLTFTextureInfo {
 		public int index = 0;
 		public int texCoord = 0;
+		public JsonObject extensions = null;
+		public JsonElement extras = null;
 
 		public GLTFTextureInfo() {}
 	}
